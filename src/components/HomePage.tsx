@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: 1,
-      text: "Hello! I'm here to listen and support you. Tell me about your day in a word or two, or share whatever is on your mind...",
+      text: "Hello! I'm here to listen and support you. Tell me about your day in a single word, or share whatever is on your mind...",
       isUser: false,
       timestamp: new Date(),
     }
@@ -196,7 +196,7 @@ const HomePage: React.FC = () => {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Tell me about your day in a word or two..."
+              placeholder="Tell me about your day in a single word..."
               className="flex-1 px-4 py-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"
             />
             <button
